@@ -16,4 +16,12 @@ for (let char of fullnames){
 
 // challenge
 console.log('-----challenge-----')
+const students = [
+    {nama: 'jon', city: 'nyu yok'},
+    {nama: 'piter', city: 'paris'},
+    {nama: 'ket', city: 'sidni'}
+];
 
+for (let student of students){
+    console.log(`${student.nama} lives in ${student.city}`)
+}
