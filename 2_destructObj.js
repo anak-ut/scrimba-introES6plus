@@ -16,7 +16,7 @@ console.log(player.addres.city);
 // mari kita destruct ges
 
 const { name,club,addres : {city} }= player;
-const biodata = `namanya adalah ${name} dari klub ${club} dari kota ${city}`;
+const biodata = `1. namanya adalah ${name} dari klub ${club} dari kota ${city}`;
 console.log(biodata);
 
 // challenge
@@ -29,6 +29,14 @@ const student = {
 };
 
 // mari kita destructure challenge ini
-const {nama, age, projek, projek: {gameDadu}} = student;
-let biodataStudent = `si ${nama} berumur ${age} punya game ${projek} yaitu ${gameDadu}`;
-console.log(biodataStudent);
+let {nama, age, projek} = student;
+let {gameDadu} = projek;
+
+console.log(nama)
+console.log(age)
+console.log(gameDadu)
+
+
+// console.log(projek)
+// let biodataStudent = `2. si ${nama} berumur ${age} punya game ${projek} yaitu ${gameDadu}`;
+// console.log(biodataStudent);
