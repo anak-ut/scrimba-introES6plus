@@ -6,3 +6,17 @@ function addressMaker(city,state){ //parameter bertindak sbg value
 addressMaker('austin','texas');
 
 // remember string literals ?
+
+// challenge
+
+function addressGenerator(address){
+    const {city, state} = address
+    const newerAddress = {
+        city,
+        state,
+        country: 'United States'
+    };
+    console.log(` # ini challenge: ${newerAddress.city}-${newerAddress.state}-${newerAddress.country}`);
+}
+
+addressGenerator({city: 'austin', state: 'texas'});
