@@ -13,6 +13,8 @@ console.log(example); // output : undefined
 // variabel belum dibuat, alias tidak ada, padahal ada ya di dalam block
 // const tidak bisa reassign other value/type data
 // tapi dalam bentuk array/ object, bisa ditambah kurang isinya.
+// tapi tidak bs reassign data type. misal sudah jadi array, tidak bisa direassign jadi string
+// atau number
 
 const konstanta = [];
 konstanta.push('bisa')
@@ -24,7 +26,7 @@ console.log(konStanta);
 
 const cobaReassign = 12;
 console.log(cobaReassign);
-cobaReassign = 13;
+// cobaReassign = 13;
 // console.log(cobaReassign) //gabisa reassign karna typeError
 
 // console.log(example2); // output: isnot defined
