@@ -1,19 +1,21 @@
 // restful api - https://jsonplaceholder.typicode.com/
 
-fetch('https://jsonplaceholder.typicode.com/comments/2')
-.then(response=>response.json())
-.then(data=>console.log(data))
+fetch('https://jsonplaceholder.typicode.com/posts/102')
+.then((response)=>response.json())
+.then((json)=>console.log(json));
 
 // make post
 
-fetch('https://jsonplaceholder.typicode.com/comments', {
+fetch('https://jsonplaceholder.typicode.com/posts', {
     method: 'POST',
     body: JSON.stringify({
-        postId:1,
-        name:'dylan',
-        email: 'nobody@gmail.com',
-        body: 'ancok matane cok'
-    })
+        title: 'juancokimak jokowee',
+        body: 'juancok asu tenan jokontot luhut anyenk makan 7500',
+        userId: 6969,
+    }),
+    headers: {
+        'Content-type': 'application/json; charset=UTF-8'
+    },
 })
-.then(response=>response.json())
-.then(data=>console.log(data));
+.then((response)=>response.json())
+.then((json)=>console.log(json));
