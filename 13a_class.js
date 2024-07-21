@@ -15,7 +15,9 @@ cat.makeSound('ngeoooong');
 Animal.cetak10();
 console.log(Animal.creator);
 
-// panggil class Cat
+// panggil class Cat (subclass)
 let catWomen = new Cat('catwomen',2);
 console.log(catWomen.legs);
 catWomen.makeSound('saya adalah cat women');
+
+console.log('----- challenge -----');
