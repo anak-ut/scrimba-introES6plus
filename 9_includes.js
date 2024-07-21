@@ -7,3 +7,22 @@
 let nuArray = [1,2,3,4,5];
 console.log(nuArray.indexOf(4)); // return 3 (posisi ke-3) elemen 4
 console.log(nuArray.includes(4)); //return true, ada elemen 4 di array tsb
+
+// challenge
+console.log('----- challenge -----');
+const listIngredients = [
+    'flour',
+    'sugar',
+    'eggs',
+    'butter'
+];
+
+function cekIngredient(things){
+    if (listIngredients.includes(things)){
+        console.log('yok bikin kue')
+    } else {
+        console.log(`pending, kurang ${things}`)
+    }
+}
+
+cekIngredient('choco');
