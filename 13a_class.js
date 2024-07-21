@@ -6,3 +6,4 @@ console.log(cat);
 cat.legs=99;
 console.log(cat);
 console.log(`${cat.type} has ${cat.legs} legs`);
+cat.makeSound('ngeoooong');

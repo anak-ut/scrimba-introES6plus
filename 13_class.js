@@ -4,7 +4,7 @@ export class Animal{
         this.legs = legs;
     }
     // define func
-    makeSound(sound='lound noise'){
-        console.log(sound)
+    makeSound(sound='loud noise'){
+        console.log(sound);
     }
 }
