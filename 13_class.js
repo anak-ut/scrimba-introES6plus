@@ -3,4 +3,8 @@ export class Animal{
         this.type = type;
         this.legs = legs;
     }
+    // define func
+    makeSound(sound='lound noise'){
+        console.log(sound)
+    }
 }
