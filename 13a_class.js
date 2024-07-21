@@ -19,5 +19,3 @@ console.log(Animal.creator);
 let catWomen = new Cat('catwomen',2);
 console.log(catWomen.legs);
 catWomen.makeSound('saya adalah cat women');
-
-console.log('----- challenge -----');
