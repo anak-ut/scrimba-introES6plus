@@ -4,7 +4,7 @@ let potos = [];
 //     let uploadStat = new Promise((resolve, reject)=> {
 //         setTimeout(()=>{
 //             potos.push(' gambar xx');
-//             resolve(' foto terupload')
+//             resolve(' status: foto terupload ✌️')
 //         },4000)
 //     })
 //     let result  = uploadStat
@@ -24,7 +24,7 @@ async function fotoUp(){
         let uploadStat = new Promise((resolve, reject)=> {
             setTimeout(()=>{
                 potos.push(' gambar xx');
-                resolve(' foto terupload')
+                resolve(' status: foto terupload ✌️')
             },4000)
         });
         let result  = await uploadStat
@@ -38,3 +38,4 @@ async function fotoUp(){
 }
 
 fotoUp();
+// make promise a sync await
