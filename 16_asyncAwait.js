@@ -20,17 +20,21 @@ let potos = [];
 // menjalankan fungsi2 dibawahnya
 
 async function fotoUp(){
-    let uploadStat = new Promise((resolve, reject)=> {
-        setTimeout(()=>{
-            potos.push(' gambar xx');
-            resolve(' foto terupload')
-        },4000)
-    })
-    let result  = await uploadStat
-    console.log(result);
-    console.log(potos.length);
-    console.log(potos)
-
+    try{
+        let uploadStat = new Promise((resolve, reject)=> {
+            setTimeout(()=>{
+                potos.push(' gambar xx');
+                resolve(' foto terupload')
+            },4000)
+        });
+        let result  = await uploadStat
+        console.log(result);
+        console.log(potos.length);
+        console.log(potos);
+    }
+    catch (error){
+        console.log(`error: ${error}`)
+    }
 }
 
 fotoUp();
