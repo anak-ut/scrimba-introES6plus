@@ -32,9 +32,9 @@ async function fotoUp(){
         console.log(potos.length);
         console.log(potos);
     }
-    catch (error){
+        catch (error){
         console.log(`error: ${error}`)
-    }
+        }
 }
 
 fotoUp();
